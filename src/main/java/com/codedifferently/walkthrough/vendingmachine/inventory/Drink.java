@@ -12,6 +12,6 @@ public class Drink extends Product {
 
     @Override
     public String message() {
-        return null;
+        return "Gulp gulp. Gotta love that high fructose corn syrup";
     }
 }

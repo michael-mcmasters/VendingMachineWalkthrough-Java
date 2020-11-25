@@ -4,16 +4,16 @@ import junit.framework.TestCase;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class DrinkTest {
+public class CandyTest {
 
     @Test
     public void constructorTest() {
         // Given
-        Drink drink = new Drink("FizzBuzz", 1.25);
+        Candy candy = new Candy("Pop Rocks", 0.25);
 
         // When
-        String expected = "FizzBuzz 1.25";
-        String actual = drink.toString();
+        String expected = "Pop Rocks 0.25";
+        String actual = candy.toString();
 
         // Then
         Assert.assertEquals(expected, actual);
@@ -22,11 +22,11 @@ public class DrinkTest {
     @Test
     public void messageTest() {
         // Given
-        Drink drink = new Drink();
+        Candy candy = new Candy();
 
         // When
-        String expected = "Gulp gulp. Gotta love that high fructose corn syrup";
-        String actual = drink.message();
+        String expected = "It's like a man-made vegetable from heaven";
+        String actual = candy.message();
 
         // Then
         Assert.assertEquals(expected, actual);
